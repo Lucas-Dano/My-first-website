@@ -1,0 +1,60 @@
+/* CSS is the LOOK of your page: colours, fonts, spacing and layout. */
+
+/* :root lets us store colours in named variables, so we can change them in one place */
+:root {
+  --background: #fafcfc;
+  --text: #1f2933;
+  --accent: #099d2c;   /* TASK 2: change this to any colour you like, e.g. #e11d48 */
+  --card: #ffffff1f;
+}
+
+/* Styles for the whole page */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  max-width: 1000px;       /* keeps the text from stretching too wide */
+  margin: 0 auto;         /* centres the page horizontally */
+  padding: 100px;
+  line-height: 1.6;       /* space between lines of text */
+}
+
+header {
+  text-align: center;
+  padding: 60px 0 30px;
+}
+
+h1 {
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+/* Each section becomes a white "card" */
+section {
+  background-color: var(--card);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* :hover applies when the mouse is over the button */
+button:hover {
+  opacity: 0.85;
+}
+
+footer {
+  text-align: center;
+  color: #6b7280;
+  padding: 20px 0;
+}
